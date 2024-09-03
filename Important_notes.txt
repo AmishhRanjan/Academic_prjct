@@ -1,0 +1,46 @@
+What is nodejs? And why are we using it?
+- Node. js is not a programming language; it is a runtime environment allowing you to execute JavaScript code on the server side, outside a web 
+  browser. Built on the V8 JavaScript engine from Chrome, Node. js compiles JavaScript into machine code for efficient execution. It will also allow
+  us to use node packet management to install dependencies like chakra or react.And this will all come in one very handy and powerful bundle called NodeJS.
+  We have node and npm which comes with node, is installed on your machine.
+
+What is git?
+- Git is version controlling and will help us to synchronize with GitHub our code. Very handy stuff.Absolutely necessary if you want to be a developer.
+  Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+-Note: npm init -y: by using this cmnd we are setting up our node and npm environment.
+-package.json(inside the src): this is our information holder for our frontend.
+-package.json(outside the src): this is our information holder for our backend.
+
+Note: In db.js
+1. we created ourself a run command with the npm start server, which goes to this entry point, which is the index.js in the server folder.
+2. Here at the top we can describe a type of how we importing modules.And this will be with the name module.
+3. In Json or in the db.S, we can create a function which will allow us to create a connection to our database.
+   we can create a dot env file.
+   And we will fill this with the mongo Uri later on.So actually what we can do here is uppercase.And we can leave for now here string.So this string here we will get this 
+   from our MongoDB account from our database.And we will paste it in to make a connection.
+4. In db.js we start creating a function to connect to our database.
+5. if u want to go one directory back like from client to ACADEMIC_PRJCT use cmnd like : cd ..
+6. bcryptjs: this will encrypt our data.
+7. concurrently: which will allow us to run the back end at the front end simultaneously.
+8. cors: for security.
+9. dotenv: this allows us to create this dot env file.
+10. express: because we are creating an express server.
+11. express-async-handler: this allows us to handle the errors of our backend a bit more efficient.
+12. jsonwebtoken: For identity authentication.
+13. mongoose: mongoose is out ORM, so our objec relationship manager or mapper. This will allow us to create data to the database and read from it.
+14. nodemailer: we want to send emails for verification.
+15. stripe: we need stripe later on for credit card payments.
+16. so this was the total cmnd: "npm install bcryptjs concurrently cors dotenv express express-async-handler jsonwebtoken jwt-decode mongoose nodemailer stripe"
+
+Note: In index.js
+1. dotenv.config(): we are initializing it. The documentation of Dotenv says that u should initialize that as soon as possible.
+2. import cors from 'cors': this will allow us to talk in our browser to different ports. By default this is prohibited.
+3. npm run server
+  Error: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+  Server runs on port 5000
+  - so we are getting error coz we haven't set up our MongoDB account yet.
+
+4. Object mapper: Which knows how we define our product data and our product object.
+
+
