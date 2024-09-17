@@ -43,4 +43,18 @@ Note: In index.js
 
 4. Object mapper: Which knows how we define our product data and our product object.
 
+-What is Redux?
+ we will set up Redux, which helps us to manage our data on the client side.
 
+Note: In package.json there is a term called "concurrently" so basically the use of concurrently is we want to start our front end 
+with the help of backend.it means we want to run the backend first then the frontend run automatically so that we will not get any error.
+
+-Why do we need Redux?
+So for example, if you passing down data and you changing the stock or the amounts, it might be that the product cart is changing the amount, but the product screen doesn't know.
+And if the product screen talks to the database, things can get very messy and the data would be displayed on the screen incorrectly.So this is where Redux comes in.
+It's probably the best sidekick of react, because Redux is our front end database taking care of the state of the data.
+
+Note: And Redux has a reducer which will update our components as soon as something changes.We have to combine reducers method here for it, which takes an object.
+And this is where we can combine later on our reducers for products, orders, users or whatever we have handling data in our database or in our front ends.
+
+Note: In index.js, The strict mode is for developing and it gives you more information. If something goes wrong in your application, you can keep this.

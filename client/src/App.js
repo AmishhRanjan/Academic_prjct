@@ -1,3 +1,4 @@
+/*
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +20,20 @@ function App() {
         </a>
       </header>
     </div>
+  );
+}
+
+export default App;
+*/
+
+import { ChakraProvider } from '@chakra-ui/react'
+import ProductsScreen from './screens/ProductsScreen';
+
+function App() {
+  return (
+    <ChakraProvider>
+     <ProductsScreen/>
+    </ChakraProvider>
   );
 }
 
