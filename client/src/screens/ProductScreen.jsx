@@ -26,6 +26,20 @@ const ProductScreen = () => {
         }
     };
 
+    // const addItem = () => {
+    //     if (cartItems.some((cartItem) => cartItem.id === id)) {
+    //         cartItems.find((cartItem) => cartItem.id === id);
+    //         dispatch(addCartItem(id, amount));
+    //     } else {
+    //         dispatch(addCartItem(id, amount));
+    //     }
+    //     toast({
+    //         description: 'Item has been added.',
+    //         status: 'success',
+    //         isClosable: true,
+    //     });
+    // };
+
   return (
     <Wrap spacing='30px' justify='center' minHeight='100vh'>
         {loading ? (
@@ -95,6 +109,12 @@ const ProductScreen = () => {
                                         Add to cart
                                     </Button>
                                     <Stack width = '270px'>
+                                        <Flex alignItems='center'>
+                                            <BiPackage size='20px' />
+                                            <Text fontWeight = 'medium' fontSize='sm' ml='2'>
+                                                Shipped in 2-3 days
+                                            </Text>
+                                        </Flex>
                                         <Flex alignItems='center'>
                                             <BiCheckShield size='20px' />
                                             <Text fontWeight = 'medium' fontSize='sm' ml='2'>
