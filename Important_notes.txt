@@ -58,3 +58,7 @@ Note: And Redux has a reducer which will update our components as soon as someth
 And this is where we can combine later on our reducers for products, orders, users or whatever we have handling data in our database or in our front ends.
 
 Note: In index.js, The strict mode is for developing and it gives you more information. If something goes wrong in your application, you can keep this.
+
+Note: cd client: to install something in the frontend means in the client folder.
+      cd ..:  to comeback in the backend to run the app(npm run app).
+      for email verification first we start the server by using cmnd(npm run server);
