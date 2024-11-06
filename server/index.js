@@ -17,6 +17,8 @@ app.use(cors());
 app.use('/api/products', productRoutes); //localhost:5000/api/products
 app.use('/api/users', userRoutes);
 
+app.get('/api/config/google', (req, res) => res.send(process.env.GOOGLE_CLIENT_ID)); //Get Request For Google Client Id
+
 const port = 5000; //we are creating a port nd specifying that with 5000.
 
 app.get('/', (req, res) => {
